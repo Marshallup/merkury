@@ -1,0 +1,104 @@
+.use {
+  padding-top: 120px;
+  position: relative;
+  background-image: linear-gradient(to top, #f6f7fa 0%, #ffffff 100%);
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &-img {
+    position: relative;
+    width: 1000px;
+    height: 667px;
+    img {
+      position: absolute;
+      width: 1360px;
+      max-width: none;
+    }
+  }
+}
+.container__use {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0;
+  @media screen and (max-width: 1430px) {
+    max-width: 100%;
+  }
+}
+.use-text {
+  margin-right: 40px;
+}
+.title__use-text {
+  line-height: 66px;
+}
+.descr__use-text {
+  margin-top: 40px;
+}
+.use-list {
+  margin-top: 40px !important;
+  &__item {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #5584ff;
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: 18px;
+      width: 28px;
+      height: 28px;
+      background: url("../img/icons/checked.png") center center/cover no-repeat;
+    }
+  }
+}
+@media screen and (max-width: 1694px) {
+  .title__use-text {
+    text-align: center;
+  }
+  .descr__use-text {
+    text-align: center;
+  }
+  .use-list__item {
+    justify-content: center;
+  }
+  .use-img {
+    height: 545px;
+    margin-top: 50px;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 806px) {
+  .use {
+    padding-top: 60px;
+  }
+  .use-text {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 596px) {
+  .use {
+    padding-top: 50px;
+    height: 850px;
+  }
+  .descr__use-text {
+    br {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .use-list {
+    &__item {
+      padding-left: 10px;
+      &::before {
+        padding: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.drap-drop {
+  background-color: #0e1a35;
+  background: #0e1a35 url("/assets/img/graph.png") center center/ contain
+    no-repeat;
+  &__content {
+    padding: 167px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.demonstrate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-head__title {
+    font-size: 31px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  &-head {
+    span {
+      color: #8492af;
+    }
+  }
+  &-head__progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    margin-top: 30px;
+    &__drop-block {
+      margin-top: 14px;
+      height: 101px;
+      border: 1px dashed #8492af;
+      color: #8492af;
+      letter-spacing: 0.2px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 93px;
+    }
+    &__bottom-wrap {
+      margin-top: 15px;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        cursor: none;
+      }
+    }
+  }
+}
+.progress,
+.completed {
+  width: 393px;
+}
+.progress {
+  margin-right: 50px;
+}
+.slider {
+  margin-top: 57px;
+  &-item {
+    &__title {
+      text-align: left;
+      color: #ffffff;
+    }
+    &__descr {
+      margin-top: 30px;
+    }
+  }
+  &-item-arrows {
+    margin-top: 43px;
+    display: flex;
+    &__left {
+      margin-right: 20px;
+    }
+    &__right {
+      transform: rotate(180deg);
+    }
+  }
+}
+@media screen and (max-width: 1430px) {
+  .drap-drop__content {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 874px) {
+  .drap-drop__content {
+    padding-top: 60px;
+  }
+  .progress {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 844px) {
+  .completed {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 824px) {
+  .drap-drop__content {
+    padding-bottom: 60px;
+  }
+  .progress {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 424px) {
+  .progress,
+  .completed {
+    width: 300px;
+  }
+  .progress {
+    margin-right: 0;
+  }
+}

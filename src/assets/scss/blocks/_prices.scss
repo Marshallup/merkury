@@ -1,0 +1,84 @@
+.prices {
+  background-image: linear-gradient(to top, #ffffff 0%, #f6f7fa 100%);
+}
+.cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-item {
+    padding: 48px 0;
+    background-color: #ffffff;
+    width: 360px;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    &__title {
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.48px;
+      color: #0e1a35;
+    }
+    &-price {
+      padding-left: 10px;
+      color: #0e1a35;
+    }
+    .dollar {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 0.44px;
+    }
+    .cost {
+      font-size: 72px;
+      font-weight: 700;
+      letter-spacing: 1.44px;
+    }
+    .period {
+      color: #8492af;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.48px;
+    }
+    &-list {
+      margin-top: 20px !important;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.36px;
+      color: #8492af;
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+        &::before {
+          content: "";
+          background: url("../img/icons/checked.png") center center/cover
+            no-repeat;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
+.descr__prices {
+  margin-top: 80px;
+  text-align: center;
+}
+.btn__prices {
+  margin: 50px auto 100px auto;
+  text-align: center;
+  line-height: 52px;
+}
+@media screen and (max-width: 1118px) {
+  .cards {
+    justify-content: center;
+    &-item {
+      margin: 0 10px 20px 10px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+}
+.container {
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (max-width: 1430px) {
+    max-width: 1270px;
+  }
+}
+.title,
+.subtitle {
+  text-align: center;
+}
+.title {
+  font-weight: 100;
+  color: #0e1a35;
+  font-size: 60px;
+}
+.subtitle {
+  font-size: 36px;
+  color: #8492af;
+  font-weight: 400;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 204px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #5584ff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0px 4px 20px rgba(124, 157, 243, 0.4);
+  }
+}
+.descr {
+  color: #8492af;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.block {
+  position: relative;
+  overflow: hidden;
+}
+.cursor-wrap,
+.cursor-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #8492af, $alpha: 0.2);
+  border-radius: 50%;
+}
+.cursor-wrap {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  z-index: 10;
+  .cursor-inner {
+    width: 76px;
+    height: 76px;
+  }
+}

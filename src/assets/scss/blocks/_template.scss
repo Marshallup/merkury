@@ -1,0 +1,143 @@
+.template {
+  padding-top: 83px;
+  background-color: #f6f7fa;
+}
+.container__template {
+  max-width: 1451px;
+}
+.descr__template {
+  margin-top: 28px;
+  text-align: center;
+}
+.presentation {
+  position: relative;
+  margin-top: 86px;
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &-point {
+    position: absolute;
+    z-index: 10;
+    &__title {
+      color: #0e1a35;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.48px;
+      line-height: 7px;
+    }
+    &__left {
+      top: 90px;
+      left: 0;
+    }
+    &__right {
+      bottom: 148px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .presentation-point__title,
+      .presentation-point__descr {
+        text-align: right;
+      }
+    }
+    &-designator-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &-designator {
+      &__line {
+        width: 631px;
+        height: 2px;
+        background-color: #5584ff;
+      }
+      &-marker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: rgba($color: #5584ff, $alpha: 0.6);
+        &__circle {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #5584ff;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1430px) {
+  .presentation-point-designator__line {
+    width: 536px;
+  }
+}
+@media screen and (max-width: 1262px) {
+  .presentation-point__left {
+    left: 227px;
+    top: 99px;
+  }
+  .presentation-point__right {
+    right: 195px;
+  }
+  .presentation-point-designator__line {
+    width: 336px;
+  }
+}
+@media screen and (max-width: 1134px) {
+  .presentation-point__left {
+    left: 130px;
+    top: 99px;
+  }
+  .presentation-point__right {
+    right: 128px;
+  }
+}
+@media screen and (max-width: 954px) {
+  .presentation-point__left {
+    left: 43px;
+    top: 35px;
+  }
+  .presentation-point__right {
+    right: 14px;
+  }
+}
+@media screen and (max-width: 804px) {
+  .presentation-point__left {
+    left: 3px;
+    top: 54px;
+  }
+  .presentation-point__right {
+    right: 14px;
+  }
+  .presentation-point__title {
+    font-size: 20px;
+  }
+  .presentation-point-designator__line {
+    width: 266px;
+  }
+}
+@media screen and (max-width: 698px) {
+  .presentation-point__title {
+    line-height: 27px;
+  }
+  .presentation-point {
+    position: relative;
+  }
+  .presentation-point-designator-wrap {
+    display: none;
+  }
+  .presentation-point__left {
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .presentation-point__right {
+    padding-bottom: 20px;
+    right: 0;
+    bottom: 0;
+  }
+}
